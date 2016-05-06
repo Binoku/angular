@@ -3,32 +3,65 @@
 <head>
   <title>Angular Demo</title>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 	
+ 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 
+    <link rel="stylesheet" type="text/css" href="newcss/animation-demo.css">
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  
+    <link href="newcss/animation-demo.css" rel="stylesheet"> 
+  
 </head>
 <body>
+<nav class="purple accent-4">
+    <div class="nav-wrapper container">
+     <a href="#" class="brand-logo center animated fadeInDown">The Day</a>
 
+
+      </div>
+       <body background="http://hdwallpaperspretty.com/wp-content/gallery/black-wallpaper-designs/1244132252622.com.cn.jpg" >
+ 	</body>
+     
   <form>
-     Boy: <input ng-model="Boy" placeholder="Type Here"></input> <br />
-    Girl: <input ng-model="Girl" placeholder="Type Here"></input> <br />
+     Boy: <input ng-model="Boy" placeholder="Name"></input> <br />
+    Girl: <input ng-model="Girl" placeholder="Name"></input> <br />
     Name of School: <input ng-model="school" placeholder="School Name"></input> <br />
-    Schoolname: <input ng-model="username" placeholder="Username"></input> <br />
-   Standing: <input ng-model="username" placeholder="Place"></input> <br />
-    Username: <input ng-model="username" placeholder="Username"></input> <br />
-    Username: <input ng-model="username" placeholder="Username"></input> <br />
-    Username: <input ng-model="username" placeholder="Username"></input> <br />
-    Username: <input ng-model="username" placeholder="Username"></input> <br />
-    Username: <input ng-model="username" placeholder="Username"></input> <br />
+    Bus: <input ng-model="Bus" placeholder="Bus Number"></input> <br />
+   Standing: <input ng-model="place" placeholder="Place"></input> <br />
+   Gang: <input ng-model="gang" placeholder="Gang Name"></input> <br />
+    Room: <input ng-model="room" placeholder="Room Number"></input> <br />
+    Other Room: <input ng-model="room2" placeholder="Other Room"></input> <br />
+    Teacher: <input ng-model="teacher" placeholder="Teacher's Name"></input> <br />
+    Principal: <input ng-model="principal" placeholder="Principal's Name"></input> <br />
+
   </form>
 
-  <h3>When {{ Boy }} Met {{ Girl }}</h3>
-  <p>One day {{ maleMainCharacter }} waking up to goto {{ school }} </p>
+  <h3>When {{ Boy }} woke up...</h3>
+  <p>{{ Boy }} was waking up to goto {{ school }} but then he noticed that it was almost time to get to the bus. {{ Boy }} put on his clothes and took toast from a plate. Then he heard something </p>
 
-  <p>The bus came and the {{ Boy }} ran outside to meet his friend {{ Girl }}</p>
+  <p>The bus came and the {{ Boy }} ran outside to meet his friend {{ Girl }} at Bus {{ Bus }}</p>
 
   <h3>Next... {{ Girl }}</h3>
   <p> Looked outside and saw {{ Boy }} running down the street and told the bus driver to stop</p>
 
   <h3> Arrived at School...</h3>
-  <p>{{ Girl }} waved at her other friends that were standing near a {{ }}
+  <p>{{ Girl }} waved at her other friends that were standing near a {{ place }}
 
-</body>
+  <p>A gang appeared called the {{ gang }} pushed and shoved the kids that were in their way </p>
+
+  <p>{{ Boy }} ran to the classroom tired and out of breath. He was in room {{ room }} instead of {{ room2 }}</p>
+
+  <p>Then {{ teacher }} was questioning {{ Boy }} why he was in this room. {{ Girl }} walks in and asks if she could bring {{ Boy }} to the office</p>
+  <h3>Arriving at the Office</h3>
+  <p>The two sat down together and then were both told to go inside. Mr. {{ principal }} welcomed them and said that they are doing well in school and is wondering if they want to go on a field trip around Disney. {{ Girl }} and {{ Boy }} were both in shock and immediately said yes</p>
+
+  <h3>They both left in with their heads up</h3>
+
+  <h2>THE END</h2>
+
+
 </html>
